@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Wandermuse</title>
+    <link rel="stylesheet" href="assets/styles.min.css" type="text/css">
+    <link rel="stylesheet" href="assets/main.css" type="text/css">
+    <link rel="shortcut icon" href="favicon.ico?v=1" type="image/x-icon">
+    <script src="assets/scrollreveal.min.js"></script>
+    <script>
+      (function(){
+        var config = {
+          viewFactor : 0.15,
+          duration   : 800,
+          distance   : "0px",
+          scale      : 0.8,
+        }
+        window.sr = new ScrollReveal(config)
+      })()
+    </script>
+    <style>
+      .sr .hero,
+      .sr .intro,
+      .sr .demo .block {
+        visibility: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="crown">
+      <svg viewbox="0 0 48 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="logo">
+        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+          <rect fill="#FFFFFF" x="3" y="0" width="6" height="18" rx="1.5"></rect>
+          <rect fill="#FFFFFF" x="27" y="0" width="6" height="32" rx="1.5"></rect>
+          <rect fill="#000000" x="15" y="0" width="6" height="8" rx="1.5"></rect>
+          <rect fill="#FFFFFF" x="15" y="14" width="6" height="18" rx="1.5"></rect>
+          <rect fill="#000000" x="39" y="0" width="6" height="18" rx="1.5"></rect>
+          <rect fill="#ff7c35" x="3" y="24" width="6" height="8" rx="1.5"></rect>
+          <rect fill="#5943aa" x="39" y="24" width="6" height="8" rx="1.5"></rect>
+        </g>
+      </svg>
+      <div class="title">Wandermuse</div>
+      <div class="contact">
+          <a href="mailto:wandermuse.piano@gmail.com" class="link"> 
+          <strong>Contact</strong>
+        </a>
+      </div>
+    </div> -->
+    <div class="hero">
+        <img class="hero-img" src="assets/piano.png"/>
+        <div class="hero-content">
+              <h1 class="title">Wandermuse</h1>
+              <p class="intro">Bringing a touch of elegance to any event.</p>
+        </div>
+    </div>
+        <div class="footer">
+              <div class="contact">
+                  <span>Wedding/Events pianist, serving the OC area with</span>
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="92px" height="72px" viewBox="0 0 92 72" enable-background="new 0 0 92 72" xml:space="preserve" class="heart">
+                    <g>
+                      <path fill="#010101" d="M82.32,7.888c-8.359-7.671-21.91-7.671-30.271,0l-5.676,5.21l-5.678-5.21c-8.357-7.671-21.91-7.671-30.27,0 c-9.404,8.631-9.404,22.624,0,31.255l35.947,32.991L82.32,39.144C91.724,30.512,91.724,16.52,82.32,7.888z"></path>
+                    </g>
+                  </svg>
+                  <a href="mailto:wandermuse.piano@gmail.com" class="link"> 
+                  <strong>wandermuse.piano@gmail.com</strong></a>
+              </div>
+          </div>
+    <div class="createdBy">Website designed and developed by <a href="http://freshfeel-co.github.io">FreshFeel.co</a>
+    <script>
+
+      var hero = {
+        origin   : "top",
+        distance : "24px",
+        duration : 1500,
+        scale    : 1.05,
+      }
+
+      var intro = {
+        origin   : "bottom",
+        distance : "64px",
+        duration : 900,
+        delay    : 1500,
+        scale    : 1,
+      }
+
+      var contact = {
+        origin   : "top",
+        distance : "32px",
+        duration : 600,
+        delay    : 1800,
+        scale    : 0,
+      }
+
+      var block = {
+        reset: true,
+        viewOffset: { top: 64 }
+      }
+
+      sr.reveal(".demo .block", block)
+      sr.reveal(".hero", hero)
+      sr.reveal(".intro", intro)
+      sr.reveal(".hero .contact", contact)
+      sr.reveal(".seq-1", block, 200)
+
+    </script>
+    <script>
+      var crown = document.querySelector(".crown")
+      var demo  = document.querySelector(".demo")
+
+      window.addEventListener( "scroll", scrollBrain, false )
+
+      var body = document.body,
+          html = document.documentElement;
+
+      var height = Math.max( body.scrollHeight, body.offsetHeight,
+                             html.clientHeight, html.scrollHeight, html.offsetHeight )
+
+      function scrollBrain(){
+
+        if ( window.pageYOffset >= demo.offsetTop + 64 ){
+          return crown.classList.add("visible")
+        }
+        if ( crown.classList.contains("visible") ){
+          return crown.classList.remove("visible")
+        }
+        if ( window.pageYOffset >= 0.85 * ( height - window.clientHeight ) ) {
+          _gaq.push([ '_trackEvent', 'Behavior', 'Scroll', 'Viewed the entire page.'])
+        }
+      }
+
+    </script>
+  </body>
+</html>
+

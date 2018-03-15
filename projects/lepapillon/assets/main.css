@@ -1,0 +1,166 @@
+body { 
+    background-color: #1b1b1b;
+}
+
+a {
+    cursor: pointer;
+    color: white;
+}
+
+.navbar {
+    background-color: #1b1b1b;
+    font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.navbar-header{
+    padding-bottom: 10px;
+}
+
+.navbar-toggle .icon-bar {
+    background-color: white;
+}
+
+#le-papillon-logo {
+    height: 45px;
+}
+
+.navbar-brand {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.nav>li>a {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.page {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.jumbotron {
+    padding-left: 60px;
+    padding-right: 60px;
+    height: 400px;
+    margin-bottom: 12px;
+    background-color: white;
+    /* background-color: #1b1b1b;
+    color: white; */
+}
+
+.jumbotron--header {
+    background-color: #1b1b1b;
+    color: white;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    padding-bottom: 10px;
+    margin: 30px 0;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.flex-container--reversed {
+    flex-direction: row-reverse;
+}
+
+.text-block {
+    padding: 0 20px;
+}
+
+.img-block {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+
+#img-suit-and-dress {
+    background-image: url('../images/suit-and-dress.png');
+    margin-bottom: 40px;
+}
+
+#img-alterations {
+    background-image: url('../images/alterations.png');
+}
+
+#img-curtains {
+    background-image: url('../images/curtains.png');
+}
+
+#img-dresses {
+    background-image: url('../images/dresses.png');
+}
+
+#img-tailor-shop {
+    background-image: url('../images/tailor-shop.png');
+}
+
+#img-repairs {
+    background-image: url('../images/repairs.png');
+}
+
+#img-wedding-dress {
+    background-image: url('../images/wedding-dress.png');
+}
+
+.info-card {
+    color: black;
+    position: absolute;
+    background: white;
+    margin-left: 10px;
+    margin-top: 120px;
+    width: 226px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
+    border-radius: 2px;
+}
+
+.info-card-inner{
+    padding: 6px 16px;
+}
+
+.info-card-inner-group {
+    padding-bottom: 8px;
+}
+
+.btn-primary {
+    background-color:#1b1b1b;
+    border: 1px solid white;
+}
+
+.btn-primary:hover {
+    background-color: white;
+    color: #0a6ebd;
+}
+
+.u-inline-block {
+    display: inline-block;
+}
+
+@media only screen and (max-width: 992px) {
+    .jumbotron {
+        height: 600px;
+        padding: 30px 36px;
+    }
+    .jumbotron p {
+        font-size: 16px;
+    }
+    .flex-container, .flex-container--reversed {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #le-papillon-logo {
+        height: 32px;
+    }
+}

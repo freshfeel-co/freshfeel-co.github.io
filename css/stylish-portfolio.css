@@ -269,6 +269,8 @@ h6 {
 .portfolio-item .caption .caption-content {
   color: #fff;
   margin: auto 2rem 2rem;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 12px;
 }
 
 .portfolio-item .caption .caption-content h2 {
