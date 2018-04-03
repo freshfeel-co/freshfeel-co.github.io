@@ -1,0 +1,107 @@
+$primary-font-family: 'Open Sans', sans-serif;
+$main-bg-color: rgb(1, 0, 1);
+$section-bg-color: rgb(36, 36, 36);
+$main-text-color: #e4e4e4;
+$section-margin: 6px;
+$section-border-radius: 2px;
+$header-height: 200px;
+
+body {
+    background-color: $main-bg-color;
+    color: $main-text-color;
+    font-family: $primary-font-family;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: auto;
+}
+
+%base-section {
+    background-color: $section-bg-color;
+    margin: $section-margin;
+    border-radius: $section-border-radius;
+}
+
+.header {
+    @extend %base-section;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 12px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.profile-picture {
+    border-radius: 50%;
+    width: 70px;
+    margin: 10px;
+}
+
+.header-info-container {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    margin-left: 20px;
+    margin-bottom: 12px;
+}
+
+.header-info {
+    padding: 10px;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.projects {
+    @extend %base-section;
+    width: 35%;
+    height: 4*$header-height;
+}
+
+.projects-info {
+    display: flex;
+    margin: 10px;
+    padding: 8px;
+    border: 1px solid gray;
+}
+
+.resume {
+    @extend %base-section;
+    width: 65%;
+    height: 4*$header-height;
+    overflow: auto;
+}
+
+.resume-info {
+    display: flex;
+    border-bottom: 1px solid gray;
+    padding: 20px;
+    margin: 10px;
+}
+
+.icon-container {
+    margin-right: 10px;
+}
+
+.text-container {
+    max-width: 500px;
+}
+
+.title {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    margin-bottom: 4px;
+}
+
+.description {
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+}
